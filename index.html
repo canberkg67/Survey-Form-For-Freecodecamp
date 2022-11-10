@@ -9,63 +9,77 @@
 <body>
     <h1 id="title">A Survey About Sports</h1>
     <p id="description">This survey is made for collecting people's ideas and opinions about sports.</p>
-    <form>
+    <form id="survey-form">
         <fieldset>
-            <label for="">Name:
-                <input type="text">
+            <label for="name">Name:
+                <input id="name" name="name" type="text" placeholder="Enter your name here" required>
             </label>
             
-            <label for="">Email:
-                <input type="text">
+            <label for="email">Email:
+                <input id="email" name="email" type="email" placeholder="Enter your email here" required>
             </label>
 
-            <label for="">Age:
-                <input type="text">
+            <label for="number">Age:
+                <input id="number" name="number" type="number" min="7" max="100" required>
             </label>
 
-            <label for="">Name the sport that you are most interested in:
-                <input type="text">
+            <label for="dropdown">Gender:
+                <select name="dropdown" id="dropdown">
+                    <option value="1">Female</option>
+                    <option value="2">Male</option>
+                    <option value="3">Not Prefer To Say</option>
+                </select>
+            </label>
+
+            <label for="interest">Name the sport that you are most interested in:
+                <input name="interest" id="interest" type="text">
+            </label>
+        </fieldset>
+
+        <fieldset>Do you think all people who is able have to do some kind of sport?
+            <label for="yes">
+                <input id="yes" type="radio" name="opinion" value="yes">Yes
+            </label>
+            
+            <label for="no">
+                <input id="no" type="radio" name="opinion" value="no">No
+            </label>
+            
+            <label for="no-idea">   
+                <input id="no-idea" type="radio" name="opinion" value="no-idea">No Idea
+            </label> 
+        </fieldset>
+
+        <fieldset>
+            <label for="favourite">Do you have any favourite team or person in a sport?
+                <input id="favourite" name="favourite" type="text" placeholder="Write your favourite team or sportperson in here">
             </label>
         </fieldset>
 
         <fieldset>
-            <label for="">Do you think all people who is able have to do some kind of sport?
-                <input type="radio">Yes
-                <input type="radio">No
-                <input type="radio">No Idea
-            </label>
-        </fieldset>
-
-        <fieldset>
-            <label for="">Do you have any favourite team or person in a sport?
-                <input type="text">
-            </label>
-        </fieldset>
-
-        <fieldset>
-            <label for="">Which sports in below do you interested in?
-                <input type="checkbox">Football-Soccer
-                <input type="checkbox">Basketball
-                <input type="checkbox">Volleyball
-                <input type="checkbox">Tennis
-                <input type="checkbox">Baseball
-                <input type="checkbox">Hockey
-                <input type="checkbox">F1
-                <input type="checkbox">American Football
-                <input type="checkbox">Swimming
-                <input type="checkbox">Boxing
-                <input type="checkbox">Fitness-Bodybuilding
+            <label for="check">Which sports in below do you interested in?
+                <input id="check" type="checkbox" name="football" value="football">Football-Soccer
+                <input id="check" type="checkbox" name="basketball" value="basketball">Basketball
+                <input id="check" type="checkbox" name="volleyball" value="volleyball" >Volleyball
+                <input id="check" type="checkbox" name="tennis" value="tennis">Tennis
+                <input id="check" type="checkbox" name="baseball" value="baseball">Baseball
+                <input id="check" type="checkbox" name="hockey" value="hockey">Hockey
+                <input id="check" type="checkbox" name="f1" value="f1">F1
+                <input id="check" type="checkbox" name="american" value="american">American Football
+                <input id="check" type="checkbox" name="swimming" value="swimming">Swimming
+                <input id="check" type="checkbox" name="boxing" value="boxing">Boxing
+                <input id="check" type="checkbox" name="fitness" value="fitness">Fitness-Bodybuilding
 
             </label>
         </fieldset>
 
         <fieldset>
-            <label for="">Explain the reason why do you like the sport you are doing and how you benefit from it?
-                <textarea></textarea>
+            <label for="explain">Explain the reason why do you like the sport you are doing and how you benefit from it?
+                <textarea id="explain" name="explain" placeholder="Write your reason here"></textarea>
             </label>
         </fieldset>
 
-        <input type="submit">
+        <input id="submit" type="submit">
     </form>
 
 
