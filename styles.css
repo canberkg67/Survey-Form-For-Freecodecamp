@@ -25,6 +25,9 @@ p{
 }
 
 fieldset{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     padding: 2rem 0;
     border-bottom: 2px solid rgb(1, 48, 1);
